@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{97C4D58C-123A-4745-87F7-9497BEDFCD1B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>View</RootNamespace>
+    <AssemblyName>View</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BorrowDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowDialog.Designer.cs">
+      <DependentUpon>BorrowDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminDashboard.Designer.cs">
+      <DependentUpon>FormAdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDisplayBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDisplayBooks.Designer.cs">
+      <DependentUpon>FormDisplayBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDisplayUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDisplayUsers.Designer.cs">
+      <DependentUpon>FormDisplayUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin2.Designer.cs">
+      <DependentUpon>FormLogin2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMasterInformationMaintainence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMasterInformationMaintainence.Designer.cs">
+      <DependentUpon>FormMasterInformationMaintainence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudentDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudentDashboard.Designer.cs">
+      <DependentUpon>FormStudentDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserInformationMaintainance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserInformationMaintainance.Designer.cs">
+      <DependentUpon>FormUserInformationMaintainance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDialog.Designer.cs">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionManager.cs" />
+    <EmbeddedResource Include="BorrowDialog.resx">
+      <DependentUpon>BorrowDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminDashboard.resx">
+      <DependentUpon>FormAdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDisplayBooks.resx">
+      <DependentUpon>FormDisplayBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDisplayUsers.resx">
+      <DependentUpon>FormDisplayUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin2.resx">
+      <DependentUpon>FormLogin2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMasterInformationMaintainence.resx">
+      <DependentUpon>FormMasterInformationMaintainence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudentDashboard.resx">
+      <DependentUpon>FormStudentDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserInformationMaintainance.resx">
+      <DependentUpon>FormUserInformationMaintainance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDialog.resx">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibraryDTO\ClassLibraryDTO.csproj">
+      <Project>{66ad7122-dd0b-48ee-b777-ec7ccd29cfc8}</Project>
+      <Name>ClassLibraryDTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{26de859d-003e-46dd-abb2-ec814aef01f1}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{5e8178ad-1a3f-40c3-947a-6e9d4779f720}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
